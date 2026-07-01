@@ -190,7 +190,7 @@ def chat(payload: ChatRequest, session=Depends(get_current_session)):
             answer = ask_sql(payload.question, llm=llm, role=role)
         return ChatResponse(
             answer=answer or "I could not generate an answer.",
-            sources="Databases: claims, maintenance_tickets",
+            sources=[],
             retrieval_type="sql_rag",
             role=role,
         )
