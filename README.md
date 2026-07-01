@@ -186,15 +186,17 @@ flowchart TD
     M --> N["Answer + retrieval type + citations"]
 ```
 
-## Query Flow
+## Demo 
+Valid Query
 
-1. User logs in with demo credentials.
-2. Backend returns a token containing the authenticated role.
-3. User asks a question from the frontend.
-4. Backend classifies the question as analytical or non-analytical.
-5. Analytical questions go to SQL RAG only for `admin` and `billing_executive`.
-6. Non-analytical questions go to Qdrant with an RBAC metadata filter on `metadata.access_roles`.
-7. Hybrid retrieval combines dense and sparse search.
-8. Reranking narrows retrieved chunks before the LLM sees context.
-9. Response includes answer, retrieval type, role, and source citations.
+![Doc Query](https://github.com/srashtig/MediBot_AdvancedRAG/blob/main/screenshots/doc_query.png)
 
+
+RBAC
+
+![RBAC - tech](https://github.com/srashtig/MediBot_AdvancedRAG/blob/main/screenshots/RABAC_tech.png)
+
+![RBAC - tech](https://github.com/srashtig/MediBot_AdvancedRAG/blob/main/screenshots/RBAC_tech2.png)
+
+
+see  `screenshots/` for more RBAC examples.
