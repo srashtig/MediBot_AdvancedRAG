@@ -196,7 +196,7 @@ RBAC
 
 ![RBAC - tech](https://github.com/srashtig/MediBot_AdvancedRAG/blob/main/screenshots/RABAC_tech.png)
 
-![RBAC - tech](https://github.com/srashtig/MediBot_AdvancedRAG/blob/main/screenshots/RBAC_tech2.png)
+![RBAC - billing](https://github.com/srashtig/MediBot_AdvancedRAG/blob/main/screenshots/RBAC_billing.png)
 
 
 see  `screenshots/` for more RBAC examples.
